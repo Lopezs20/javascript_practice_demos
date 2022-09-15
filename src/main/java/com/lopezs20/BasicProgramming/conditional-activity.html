@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Steak Conditional Activity</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      var eats = confirm("Do you eat chicken?");
+
+      if (eats) {
+        document.write("Here's a steak you unhealthy human!");
+      }
+      else {
+        document.write("Here's a tofu stir fry!");
+      }
+
+      var birthYear = prompt("What year were you born?");
+
+      if (birthYear < 2001) {
+        alert("Don't go to the hospital");
+      }
+      // Else if the user was born after 1997, alert "No Sake for you!"
+      else if (birthYear > 2001) {
+        alert("Can't drink!");
+      }
+      // If neither of the previous conditions was true (birthYear === 1995) we alert "You inched by!"
+      else {
+        alert("You inched by! Sake Sake Sake!");
+      }
+
+    </script>
+  </body>
+</html>
